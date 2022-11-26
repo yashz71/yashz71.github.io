@@ -1,0 +1,53 @@
+
+  .window_img{
+    width: 400px;
+    height: 200px;
+    transition: width 10s;
+  }
+  .right-img{
+    width: 0px;
+    height: 0px;
+    transition: width 2s;
+
+}
+  .window:hover .window_img{
+    width: 100px;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: perspective(600px) rotateY(15deg);
+    transform-origin: left center;
+    overflow: hidden;
+    background: transparent;
+  }
+  .window:hover .right-img{
+    width: 100px;
+    height: 200px;
+
+}
+
+@media screen and (max-width: 600px) {
+  .window_img{
+    width: 200px;
+    height: 100px;
+    transition: width 10s;
+  }
+  .right-img{
+    width: 0px;
+    height: 0px;
+    transition: width 2s;
+
+}
+  .window:hover .window_img{
+    width: 100px;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: perspective(600px) rotateY(15deg);
+    transform-origin: left center;
+    overflow: hidden;
+    background: transparent;
+  }
+  .window:hover .right-img{
+    width: 100px;
+    height: 100px;
+
+}
+  
+}
